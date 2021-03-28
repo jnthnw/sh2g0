@@ -1,0 +1,41 @@
+* {
+    color: lightgray;
+}
+
+.lead {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: black;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: orange;
+}
+
+.footer {
+    background-color: black;
+    /* Set the fixed height of the footer here */
+    /* Vertically center the text there */
+}
+
+.logo {
+    padding: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .team-images {
+        padding: 0 30%;
+    }
+}
+
+.team-images img {
+    width: 100%;
+    _max-height: 50%;
+    margin: 10px 0px;
+}
