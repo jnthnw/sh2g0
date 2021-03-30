@@ -20,7 +20,12 @@
 
 <style scoped>
 
+div {
+  color:white;
+  text-align: center;
+}
+
 h2 {
-    color: rgb(9, 75, 50);
+  margin-top: 40px;
 }
 </style>

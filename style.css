@@ -1,10 +1,23 @@
-* {
-    font-family: 'Courier New', Courier, monospace;
+@font-face {
+    font-family: 'montserrat-regular';
+    src: url('font/Montserrat-Regular.ttf') format('truetype');
 }
 
-.lead {
-   
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url('font/Montserrat-Bold.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'montserrat-extralight';
+    src: url('font/Montserrat-ExtraLight.ttf') format('truetype');
+}
+
+* {
+    font-family: 'montserrat-regular';
+}
+
+.lead {}
 
 body {
     background-color: black;
@@ -32,12 +45,14 @@ body {
     _max-height: 50%;
     margin: 10px 0px;
 }
+
 h1 {
-    color: white
+    color: white;
+    font-family: montserrat-extralight;
 }
 
 h2 {
-    color: rgb(9, 75, 50);
+    color: rgb(57, 174, 162);
 }
 
 .main-content {
@@ -55,7 +70,6 @@ h2 {
     color: white;
 }
 
-
 .white {
     background-color: white;
     color: black;
@@ -63,4 +77,18 @@ h2 {
 
 .btn {
     background-color: gray;
+}
+
+footer {
+    color: gray;
+}
+
+footer div a {
+    color: rgb(91, 91, 91);
+}
+
+.social {
+    filter: invert() brightness(40%);
+    width: 40px;
+    margin-bottom: 5px;
 }

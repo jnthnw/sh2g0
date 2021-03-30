@@ -1,3 +1,14 @@
+/*
+    Alle Seiten
+*/
+
+const files = ["aktuelles", "kontakt", "team/hannah", "team/andreas", "team/david", "team/sonja", "/film/morgen"];
+
+
+
+
+
+
 const options = {
     moduleCache: {
         vue: Vue
@@ -19,11 +30,12 @@ const options = {
 
 const { loadModule } = window['vue3-sfc-loader'];
 
-const routes = [
+var routes = [
     { path: '/', component: () => loadModule('./start.vue', options) },
-    { path: '/aktuelles', component: () => loadModule('./aktuelles.vue', options) },
-    { path: '/hannah', component: () => loadModule('./hannah.vue', options) }
 ]
+for (const f of files) {
+    routes.push({ path: '/' + f, component: () => loadModule('./' + f + '.vue', options) });
+}
 
 const router = VueRouter.createRouter({
     history: VueRouter.createWebHashHistory(),

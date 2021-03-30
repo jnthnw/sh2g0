@@ -4,7 +4,7 @@
       <h1>Hannah Müller</h1>
       <div class="row pictext">
         <div class="col-12 col-md-6">
-          <img src="hannah.jpg" class="pic" alt="" />
+          <img src="img/hannah.jpg" class="pic" alt="" />
         </div>
         <div class="col-12 col-md-6 text">
           <span class="">
@@ -41,7 +41,7 @@ h1 {
 
 .text {
   margin-top: 50px;
-  
+  font-size: 20px;
 }
 
 .container {
