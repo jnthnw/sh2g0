@@ -21,7 +21,8 @@ const { loadModule } = window['vue3-sfc-loader'];
 
 const routes = [
     { path: '/', component: () => loadModule('./start.vue', options) },
-    { path: '/aktuelles', component: () => loadModule('./aktuelles.vue', options) }
+    { path: '/aktuelles', component: () => loadModule('./aktuelles.vue', options) },
+    { path: '/hannah', component: () => loadModule('./hannah.vue', options) }
 ]
 
 const router = VueRouter.createRouter({

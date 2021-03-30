@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main-content">
     <div class="container">
       <h1>AKTUELLES</h1>
       <h2>POSTPRODUKTION</h2>
@@ -17,3 +17,10 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+
+h2 {
+    color: rgb(9, 75, 50);
+}
+</style>
