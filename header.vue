@@ -13,7 +13,7 @@
         </router-link>
         <li class="nav-item dropdown">
           <a
-            class="dropdown-toggle nav-link"
+            class="_dropdown-toggle nav-link"
             type="button"
             href="#"
             id="navbarScrollingDropdown"

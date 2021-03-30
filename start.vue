@@ -1,6 +1,5 @@
 <template>
   <div class="main-content text-center">
-
     <div class="container-fluid page-content black">
       <img
         class="logo-big"
@@ -9,13 +8,12 @@
       />
       <h1 class="title">Eine Plattform für Film und Theater</h1>
       <h3 class="subtitle">Wir sind super ...</h3>
-      <button class="btn"></button>
+      <a @click="$refs.team.scrollIntoView();"> <span class="material-icons downbutton"> arrow_circle_down </span></a>
     </div>
     <div class="container-fluid team-images page-content black">
-      <h1 class="">Team</h1>
+      <a ref="team"><h1 class="">Team</h1></a>
       <div class="row justify-content-around">
         <div class="col-6">
-          
           <img
             src="https://static.wixstatic.com/media/758d99_e738bfec78324b33a1d05f0e56d9b420~mv2.jpg/v1/crop/x_262,y_136,w_386,h_539/fill/w_272,h_380,al_c,q_80,usm_0.66_1.00_0.01/Foto%20Sonja_2.webp"
             alt=""
@@ -73,5 +71,11 @@
 
 .subtitle {
   color: white;
+}
+
+.downbutton {
+  font-size: 48px;
+  position: absolute;
+  bottom: 10px;
 }
 </style>
