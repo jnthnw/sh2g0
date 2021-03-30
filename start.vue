@@ -1,5 +1,6 @@
 <template>
   <div class="main-content text-center">
+
     <div class="container-fluid page-content black">
       <img
         class="logo-big"
@@ -62,7 +63,7 @@
 
 <style>
 .logo-big {
-  width: 40%;
+  height: 40%;
 }
 
 .title {
