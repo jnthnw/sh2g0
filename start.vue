@@ -1,42 +1,28 @@
 <template>
   <div class="main-content text-center">
     <div class="container-fluid page-content black">
-      <img
-        class="logo-big"
-        src="https://static.wixstatic.com/media/758d99_51aa420ab5384d4583d8ee0e6a59c5c7~mv2.jpg/v1/crop/x_642,y_189,w_610,h_671/fill/w_181,h_169,al_c,q_80,usm_0.66_1.00_0.01/LOGO19.webp"
-        alt=""
-      />
+      <img class="logo-big" src="assets/logo.webp" alt="" />
       <h1 class="title">Eine Plattform für Film und Theater</h1>
       <h3 class="subtitle">Wir sind super ...</h3>
-      <a @click="$refs.team.scrollIntoView();"> <span class="material-icons downbutton"> arrow_circle_down </span></a>
+      <a @click="$refs.team.scrollIntoView()">
+        <span class="material-icons downbutton"> arrow_circle_down </span></a
+      >
     </div>
     <div class="container-fluid team-images page-content black">
       <a ref="team"><h1 class="">Team</h1></a>
-      <div class="row justify-content-around">
+      <div class="row justify-content-around ">
         <div class="col-6">
-          <img
-            src="https://static.wixstatic.com/media/758d99_e738bfec78324b33a1d05f0e56d9b420~mv2.jpg/v1/crop/x_262,y_136,w_386,h_539/fill/w_272,h_380,al_c,q_80,usm_0.66_1.00_0.01/Foto%20Sonja_2.webp"
-            alt=""
-          />
+          <img src="img/sonja_2.webp" alt="" />
         </div>
         <div class="col-6">
-          <img
-            src="https://static.wixstatic.com/media/758d99_e738bfec78324b33a1d05f0e56d9b420~mv2.jpg/v1/crop/x_262,y_136,w_386,h_539/fill/w_272,h_380,al_c,q_80,usm_0.66_1.00_0.01/Foto%20Sonja_2.webp"
-            alt=""
-          />
+          <img src="img/sonja_2.webp" alt="" />
         </div>
 
         <div class="col-6">
-          <img
-            src="https://static.wixstatic.com/media/758d99_e738bfec78324b33a1d05f0e56d9b420~mv2.jpg/v1/crop/x_262,y_136,w_386,h_539/fill/w_272,h_380,al_c,q_80,usm_0.66_1.00_0.01/Foto%20Sonja_2.webp"
-            alt=""
-          />
+          <img src="img/sonja_2.webp" alt="" />
         </div>
         <div class="col-6">
-          <img
-            src="https://static.wixstatic.com/media/758d99_e738bfec78324b33a1d05f0e56d9b420~mv2.jpg/v1/crop/x_262,y_136,w_386,h_539/fill/w_272,h_380,al_c,q_80,usm_0.66_1.00_0.01/Foto%20Sonja_2.webp"
-            alt=""
-          />
+          <img src="img/sonja_2.webp" alt="" />
         </div>
       </div>
     </div>
@@ -77,5 +63,36 @@
   font-size: 48px;
   position: absolute;
   bottom: 10px;
+}
+
+.main-content {
+    height: calc(100%-150px);
+    padding-top: 150px;
+}
+
+.page-content {
+    height: calc(100vh - 100px);
+    padding-top: 20px;
+}
+
+
+.team-images .row {
+  height:30% !important;
+}
+
+@media screen and (min-width: 800px) {
+    .team-images {
+        padding: 0 30%;
+    }
+}
+
+.team-images img {
+    _width: 100%;
+    height: 100%;
+   
+}
+
+.team-images div {
+ margin: 10px 0px;
 }
 </style>

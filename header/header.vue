@@ -1,7 +1,6 @@
 <template>
   <div class="navbar navbar-expand-xl fixed-top headerbar">
     <div class="container-fluid">
-      <div class="text-center"></div>
       <router-link class="nav-link" to="/">
         <a class="navbar-brand" href="#"
           ><img class="logo" src="assets/logo.webp" alt=""

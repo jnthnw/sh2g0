@@ -7,7 +7,7 @@
           <a
             href="https://www.facebook.com/Shakespeare-to-go-1812940565700467/"
           >
-            <span class="material-icons downbutton"> facebook </span></a
+            <span class="material-icons"> facebook </span></a
           >
 
           <div class="row">
