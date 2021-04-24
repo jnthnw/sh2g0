@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar navbar-expand-xl fixed-top headerbar"  >
+  <div class="navbar navbar-expand-xl fixed-top headerbar">
     <div class="container-fluid">
       <router-link class="nav-link" to="/">
         <a class="navbar-brand" href="#"
@@ -9,21 +9,21 @@
       <button
         class="navbar-toggler"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-       
+        @click="menuCollpased = !menuCollpased"
         aria-label="Toggle navigation"
       >
         <span class="material-icons" style="color: white"> menu </span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav" aria-expanded="false">
+      <div
+        :class="'collapse navbar-collapse ' + (menuCollpased ? 'show' : '')"
+        id="navbarNav"
+      >
         <ul class="nav navbar-nav justify-content-center text-uppercase">
           <dropdown title="Team">
             <dropdown title="Sonja Holzinger" />
             <dropdown title="David Gräber" />
             <dropdown title="Andreas Neu" />
-            <dropdown title="Hannah Müller" to="/team/hannah"/>
+            <dropdown title="Hannah Müller" to="/team/hannah" />
             <dropdown title="Ehemalige" />
           </dropdown>
 
@@ -76,9 +76,19 @@ export default {
   },
   data: () => {
     return {
-      
-    }
-  }
+      menuCollpased: false,
+    };
+  },
+  watch: {
+    $route(to, from) {
+      window.scrollTo(0,0);
+      this.menuCollpased = false;
+    },
+  },
+  created: function () {
+    console.log(this.$router, this.$route);
+  
+  },
 };
 </script>
 <style>
@@ -96,6 +106,4 @@ export default {
 .navbar {
   height: 100px;
 }
-
-
 </style>
