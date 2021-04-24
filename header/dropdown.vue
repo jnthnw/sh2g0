@@ -11,7 +11,7 @@
     >
       {{ title }}
     </a>
-    <ul class="dropdown-menu" aria-labelledby="filmeDropdown">
+    <ul class="dropdown-menu">
       <li>
         <slot></slot>
       </li>
@@ -44,4 +44,44 @@ export default {
 </script>
 
 <style>
+
+
+
+.nav-link {
+  background-color: black;
+-webkit-appearance: none !important;
+  color: white;
+  
+  font-family: montserrat-extralight;
+  font-size: 30px;
+}
+
+.nav li:last-child .nav-link {
+  border-right-style: none;
+}
+.nav li .nav-link {
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: orange;
+}
+
+.router-link-active {
+  color: darkorange;
+}
+
+.nav-link:hover {
+  color: orange;
+}
+
+.dropdown-menu {
+  background-color: black !important;
+  width: 300px;
+}
+
+.dropdown-menu .nav-link {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: orange;
+  font-size: 20px;
+}
 </style>

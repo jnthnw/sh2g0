@@ -4,13 +4,14 @@
       <img class="logo-big" src="assets/logo.webp" alt="" />
       <h1 class="title">Eine Plattform für Film und Theater</h1>
       <h3 class="subtitle">Wir sind super ...</h3>
-      <a @click="scrollDown()">
-        <span class="material-icons downbutton"> arrow_circle_down </span></a
-      >
+
+      <span class="material-icons downbutton text-center" @click="scrollDown()">
+        arrow_circle_down
+      </span>
     </div>
-    <div class="container-fluid team-images page-content black" >
-      <a class="anchor" ref="team" ><h1 class="">Team</h1></a>
-      <div class="row justify-content-around ">
+    <div class="container-fluid team-images page-content black">
+      <a class="anchor" ref="team"><h1 class="">Team</h1></a>
+      <div class="row justify-content-around">
         <div class="col-6">
           <img src="img/sonja_2.webp" alt="" />
         </div>
@@ -47,12 +48,12 @@
 <script>
 export default {
   methods: {
-    scrollDown: function() {
-      var ref = this.$refs.team//.scrollIntoView()
-      window.scrollTo(0, ref.offsetTop - 150)
-    }
-  }
-}
+    scrollDown: function () {
+      var ref = this.$refs.team; //.scrollIntoView()
+      window.scrollTo({top: ref.offsetTop - 100,  behavior: 'smooth'});
+    },
+  },
+};
 </script>
 <style>
 .logo-big {
@@ -71,36 +72,39 @@ export default {
 .downbutton {
   font-size: 48px;
   position: absolute;
-  bottom: 10px;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-content {
-    height: calc(100%-150px);
+  height: calc(100%-100px);
 }
 
 .page-content {
-    height: calc(100vh - 100px);
-    padding-top: 20px;
-}
-
-
-.team-images .row {
-  height:30% !important;
+  height: calc(100vh - 100px);
+  padding-top: 20px;
 }
 
 @media screen and (min-width: 800px) {
-    .team-images {
-        padding: 0 30%;
-    }
+  .team-images {
+    _padding: 0 30%;
+  }
+}
+
+.team-images > div > div {
+  height: 100%;
+  margin-top: 10px;
+}
+
+.team-images .row {
+  height: 40% !important;
 }
 
 .team-images img {
-    _width: 100%;
-    height: 100%;
-   
-}
-
-.team-images div {
- margin: 10px 0px;
+  _width: 100%;
+  height: 100%;
 }
 </style>

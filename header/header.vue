@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar navbar-expand-xl fixed-top headerbar">
+  <div class="navbar navbar-expand-xl fixed-top headerbar"  >
     <div class="container-fluid">
       <router-link class="nav-link" to="/">
         <a class="navbar-brand" href="#"
@@ -12,12 +12,12 @@
         data-toggle="collapse"
         data-target="#navbarNav"
         aria-controls="navbarNav"
-        aria-expanded="false"
+       
         aria-label="Toggle navigation"
       >
         <span class="material-icons" style="color: white"> menu </span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarNav" aria-expanded="false">
         <ul class="nav navbar-nav justify-content-center text-uppercase">
           <dropdown title="Team">
             <dropdown title="Sonja Holzinger" />
@@ -74,6 +74,11 @@ export default {
       loadModule("./header/dropdown.vue", options)
     ),
   },
+  data: () => {
+    return {
+      
+    }
+  }
 };
 </script>
 <style>
@@ -84,41 +89,13 @@ export default {
   background-color: black;
   margin-bottom: 20px;
   margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.nav-link {
-  background-color: black;
-  color: white;
-  font-family: montserrat-extralight;
-  font-size: 30px;
+.navbar {
+  height: 100px;
 }
 
-.nav li:last-child .nav-link {
-  border-right-style: none;
-}
-.nav li .nav-link {
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-right-color: orange;
-}
 
-.router-link-active {
-  color: darkorange;
-}
-
-.nav-link:hover {
-  color: orange;
-}
-
-.dropdown-menu {
-  background-color: black !important;
-  width: 300px;
-}
-
-.dropdown-menu .nav-link {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: orange;
-  font-size: 20px;
-}
 </style>
