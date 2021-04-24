@@ -45,7 +45,7 @@ const router = VueRouter.createRouter({
 
 const app = Vue.createApp({
     components: {
-        'myheader': Vue.defineAsyncComponent(() => loadModule('./header.vue', options))
+        'myheader': Vue.defineAsyncComponent(() => loadModule('./header/header.vue', options))
     },
     created: () => {
         var currentUrl = window.location.hash;
