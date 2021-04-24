@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar navbar-expand-xl fixed-top headerbar">
+  <div class="navbar navbar-expand-md fixed-top headerbar">
     <div class="container-fluid">
       <router-link class="nav-link" to="/">
         <a class="navbar-brand" href="#"

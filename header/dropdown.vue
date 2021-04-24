@@ -37,23 +37,28 @@ export default {
       if (this.to) {
         return this.to;
       }
-      return "/" + this.title.replace(" ","").toLowerCase();
+      return "/" + this.title.replace(" ", "").toLowerCase();
     },
   },
 };
 </script>
 
 <style>
-
-
-
 .nav-link {
   background-color: black;
--webkit-appearance: none !important;
+  -webkit-appearance: none !important;
   color: white;
-  
+
   font-family: montserrat-extralight;
-  font-size: 30px;
+  font-size: 25px;
+  padding: 0px 4px !important;
+}
+
+@media (min-width: 1350px) {
+  .nav-link {
+    font-size: 30px;
+    padding: 0px 16px !important;
+  }
 }
 
 .nav li:last-child .nav-link {
