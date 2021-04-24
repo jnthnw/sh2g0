@@ -19,8 +19,13 @@
 
 .lead {}
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
+    margin-top: 150px;
 }
 
 .footer {

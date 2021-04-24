@@ -4,12 +4,12 @@
       <img class="logo-big" src="assets/logo.webp" alt="" />
       <h1 class="title">Eine Plattform für Film und Theater</h1>
       <h3 class="subtitle">Wir sind super ...</h3>
-      <a @click="$refs.team.scrollIntoView()">
+      <a @click="scrollDown()">
         <span class="material-icons downbutton"> arrow_circle_down </span></a
       >
     </div>
-    <div class="container-fluid team-images page-content black">
-      <a ref="team"><h1 class="">Team</h1></a>
+    <div class="container-fluid team-images page-content black" >
+      <a class="anchor" ref="team" ><h1 class="">Team</h1></a>
       <div class="row justify-content-around ">
         <div class="col-6">
           <img src="img/sonja_2.webp" alt="" />
@@ -44,7 +44,16 @@
     </div>
   </div>
 </template>
-
+<script>
+export default {
+  methods: {
+    scrollDown: function() {
+      var ref = this.$refs.team//.scrollIntoView()
+      window.scrollTo(0, ref.offsetTop - 150)
+    }
+  }
+}
+</script>
 <style>
 .logo-big {
   height: 40%;
@@ -67,7 +76,6 @@
 
 .main-content {
     height: calc(100%-150px);
-    padding-top: 150px;
 }
 
 .page-content {
