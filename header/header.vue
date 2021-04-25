@@ -92,6 +92,7 @@ export default {
 };
 </script>
 <style>
+
 .headerbar {
   background-color: black;
 }

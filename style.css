@@ -42,6 +42,7 @@ body {
 h1 {
     color: white;
     font-family: montserrat-extralight;
+    font-size: 70px;
 }
 
 h2 {
@@ -77,5 +78,5 @@ footer div a {
 }
 
 * {
-    _outline: rgba(255, 0, 0, 0.3) solid 0.5px !important;
+    outline: rgba(255, 0, 0, 0.3) solid 0.5px !important;
 }

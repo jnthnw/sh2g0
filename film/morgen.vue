@@ -27,7 +27,7 @@
 </template>
 <style scoped>
 h1 {
-  color: orange;
+  color: #ffa500;
   font-size: 80px;
 }
 
