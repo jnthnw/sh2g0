@@ -92,6 +92,7 @@ export default {
 
 .headerbar {
   background-color: black;
+    width: 100vw;
 }
 .nav {
   background-color: black;
@@ -103,5 +104,6 @@ export default {
 
 .navbar {
   height: 100px;
+
 }
 </style>

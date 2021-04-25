@@ -90,8 +90,8 @@
       </div>
     </div>
 
-    <div class="container-fluid page-content black m-2" id="filme">
-      <div class="container">
+    <div class="container-fluid page-content black" id="filme">
+      <div class="container m-2">
         <div class="text-left">
           <h1 class="white d-inline">THEATER</h1>
         </div>
@@ -104,24 +104,32 @@
             <img src="img/theater/schwestern.png" alt="" />
           </div>
         </div>
-        <router-link class="link white" to="/theater/theater"> > mehr</router-link>
+        <router-link class="link white" to="/theater/theater">
+          > mehr</router-link
+        >
       </div>
     </div>
 
-    <div class="container-fluid page-content white m-2" id="filme">
-      <div class="container">
+    <div class="container-fluid page-content white" id="filme">
+      <div class="container mx-sm-2">
         <div class="text-left">
           <h1 class="black d-inline">SERVICE</h1>
         </div>
-        <div class="text-left m-2">
-          <div class="m-4" >
-            <router-link class="link black" to="/theater"> > Showreel</router-link>
+        <div class="text-left mx-sm-2 links">
+          <div class="mx-sm-4">
+            <router-link class="link black" to="/theater">
+              > Showreel</router-link
+            >
           </div>
-          <div class="m-4" >
-            <router-link class="link black" to="/theater"> > Drehbuchklasse</router-link>
+          <div class="mx-sm-4">
+            <router-link class="link black" to="/theater">
+              > Drehbuchklasse</router-link
+            >
           </div>
-          <div class="m-4" >
-            <router-link class="link black" to="/theater"> > Coaching für Schauspieler</router-link>
+          <div class="mx-sm-4">
+            <router-link class="link black" to="/theater">
+              > Coaching für Schauspieler</router-link
+            >
           </div>
         </div>
       </div>
@@ -165,6 +173,7 @@ export default {
 
 .main-content {
   height: calc(100%-100px);
+  width: 100%;
 }
 
 .page-content-full {
@@ -178,8 +187,8 @@ export default {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 575px) {
-  .page-content {
+@media screen and (max-width: 770px) {
+  .page-content-full {
     height: fit-content;
     min-height: calc(100vh - 100px);
     padding-top: 20px;
@@ -190,6 +199,16 @@ export default {
     _height: 100%;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+ 
+}
+
+@media screen and (max-width: 300px) {
+ .container,
+  .container-fluid {
+    padding-left: 1px;
+    padding-right: 1px;
   }
 }
 
@@ -227,13 +246,12 @@ export default {
 
 #aktuelles .container {
   text-align: left;
+  color: black;
 }
 
-#aktuelles h1{
-  color: black
+#aktuelles h1 {
+  color: black;
 }
-
-
 
 .white.link {
   color: white;
@@ -244,5 +262,9 @@ export default {
 
 #filme img {
   max-width: 100%;
+}
+
+.links div {
+  margin-top: 10px;
 }
 </style>

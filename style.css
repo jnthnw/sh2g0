@@ -42,7 +42,8 @@ body {
 h1 {
     _color: white;
     font-family: montserrat-extralight;
-    font-size: 70px;
+    _font-size: 70px;
+    text-size-adjust: auto !important;
 }
 
 h2 {
@@ -78,7 +79,7 @@ footer div a {
 }
 
 * {
-    _outline: rgba(255, 0, 0, 0.3) solid 0.5px !important;
+    outline: rgba(255, 0, 0, 0.3) solid 0.5px !important;
 }
 
 .link {
@@ -87,4 +88,20 @@ footer div a {
     background-color: white;
     padding: 5px;
     font-size: 30px;
+}
+
+@media screen and (max-width: 350px) {
+    h1 {
+        font-size: 20px !important;
+    }
+    * {
+        text-size-adjust: auto !important;
+        word-wrap: break-word;
+    }
+    p {
+        font-size: 15px !important;
+    }
+    .link {
+        font-size: 15px !important;
+    }
 }
