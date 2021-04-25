@@ -1,6 +1,6 @@
 <template>
   <div class="main-content text-center">
-    <div class="container-fluid page-content black">
+    <div class="container-fluid page-content-full black">
       <img class="logo-big" src="img/logo19.jpg" alt="" />
       <h1 class="title">Plattform für Film und Theater</h1>
 
@@ -8,7 +8,7 @@
         arrow_circle_down
       </span>
     </div>
-    <div class="container-fluid team-images page-content black" ref="team">
+    <div class="container-fluid team-images page-content-full black" ref="team">
       <a class="anchor"><h1 class="">Team</h1></a>
       <div class="row justify-content-around">
         <div class="col-sm-6 col-12">
@@ -27,7 +27,7 @@
       </div>
     </div>
 
-    <div class="container-fluid page-content white">
+    <div class="container-fluid page-content-full black">
       <div class="container _d-flex _flex-column">
         <div class="lead _flex-fill">
           <p>
@@ -49,6 +49,80 @@
         </div>
         <div id="gruppenbild" class="_flex-fill">
           <img class="img-fluid" src="img/gruppe.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid page-content white" id="aktuelles">
+      <h1>AKTUELLES</h1>
+
+      <div class="container">
+        <h2>Neues</h2>
+        <p>POSTPRODUKTION</p>
+
+        <p>
+          MORGEN IST AUCH NOCH EIN TAG, WENN DU WILLST (AT) Mittellanger
+          Spielfilm, Dreh Juni 2020
+        </p>
+
+        <router-link class="link" to="/aktuelles"> > mehr</router-link>
+      </div>
+    </div>
+
+    <div class="container-fluid page-content black" id="filme">
+      <div class="container">
+        <div class="text-left">
+          <h1 class="white d-inline">FILME</h1>
+        </div>
+
+        <div class="row justify-content-around m-3">
+          <div class="col-sm-4 col-12">
+            <img src="img/filme/morgen.png" alt="" />
+          </div>
+          <div class="col-sm-4 col-12">
+            <img src="img/filme/cattleya.png" alt="" />
+          </div>
+          <div class="col-sm-4 col-12">
+            <img src="img/filme/experimente.png" alt="" />
+          </div>
+        </div>
+        <router-link class="link white" to="/filme"> > mehr</router-link>
+      </div>
+    </div>
+
+    <div class="container-fluid page-content black m-2" id="filme">
+      <div class="container">
+        <div class="text-left">
+          <h1 class="white d-inline">THEATER</h1>
+        </div>
+
+        <div class="row justify-content-around m-3">
+          <div class="col-sm-4 col-12">
+            <img src="img/theater/miranda.png" alt="" />
+          </div>
+          <div class="col-sm-4 col-12">
+            <img src="img/theater/schwestern.png" alt="" />
+          </div>
+        </div>
+        <router-link class="link white" to="/theater"> > mehr</router-link>
+      </div>
+    </div>
+
+    <div class="container-fluid page-content white m-2" id="filme">
+      <div class="container">
+        <div class="text-left">
+          <h1 class="black d-inline">SERVICE</h1>
+        </div>
+        <div class="text-left m-2">
+          <div class="m-4" >
+            <router-link class="link black" to="/theater"> > Showreel</router-link>
+          </div>
+          <div class="m-4" >
+            <router-link class="link black" to="/theater"> > Drehbuchklasse</router-link>
+          </div>
+          <div class="m-4" >
+            <router-link class="link black" to="/theater"> > Coaching für Schauspieler</router-link>
+          </div>
         </div>
       </div>
     </div>
@@ -93,9 +167,15 @@ export default {
   height: calc(100%-100px);
 }
 
-.page-content {
+.page-content-full {
   height: calc(100vh - 100px);
   padding-top: 20px;
+}
+
+.page-content {
+  _height: calc(100vh - 100px);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 575px) {
@@ -143,5 +223,28 @@ export default {
 
 .container {
   height: 100%;
+}
+
+#aktuelles .container {
+  text-align: left;
+}
+
+.link {
+  color: black;
+  border: black solid 1px;
+  background-color: white;
+  padding: 5px;
+  font-size: 30px;
+}
+
+.white.link {
+  color: white;
+  background-color: black;
+  border: white solid 1px;
+  padding: 5px;
+}
+
+#filme img {
+  max-width: 100%;
 }
 </style>

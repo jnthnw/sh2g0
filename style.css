@@ -40,13 +40,13 @@ body {
 }
 
 h1 {
-    color: white;
+    _color: white;
     font-family: montserrat-extralight;
     font-size: 70px;
 }
 
 h2 {
-    color: rgb(57, 174, 162);
+    _color: rgb(57, 174, 162);
 }
 
 .black {
@@ -78,5 +78,5 @@ footer div a {
 }
 
 * {
-    outline: rgba(255, 0, 0, 0.3) solid 0.5px !important;
+    _outline: rgba(255, 0, 0, 0.3) solid 0.5px !important;
 }
