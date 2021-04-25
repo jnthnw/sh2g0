@@ -86,7 +86,7 @@
             <img src="img/filme/experimente.png" alt="" />
           </div>
         </div>
-        <router-link class="link white" to="/filme"> > mehr</router-link>
+        <router-link class="link white" to="/film/filme"> > mehr</router-link>
       </div>
     </div>
 
@@ -104,7 +104,7 @@
             <img src="img/theater/schwestern.png" alt="" />
           </div>
         </div>
-        <router-link class="link white" to="/theater"> > mehr</router-link>
+        <router-link class="link white" to="/theater/theater"> > mehr</router-link>
       </div>
     </div>
 
@@ -229,13 +229,11 @@ export default {
   text-align: left;
 }
 
-.link {
-  color: black;
-  border: black solid 1px;
-  background-color: white;
-  padding: 5px;
-  font-size: 30px;
+#aktuelles h1{
+  color: black
 }
+
+
 
 .white.link {
   color: white;

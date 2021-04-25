@@ -80,3 +80,11 @@ footer div a {
 * {
     _outline: rgba(255, 0, 0, 0.3) solid 0.5px !important;
 }
+
+.link {
+    color: black;
+    border: black solid 1px;
+    background-color: white;
+    padding: 5px;
+    font-size: 30px;
+}

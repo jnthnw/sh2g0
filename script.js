@@ -2,7 +2,7 @@
     Alle Seiten
 */
 
-const files = ["aktuelles", "kontakt", "team/hannah", "team/andreas", "team/david", "team/sonja", "/film/morgen"];
+const files = ["aktuelles", "kontakt", "team/hannah", "team/andreas", "team/david", "team/sonja", "/film/morgen", "service/showreel", "service/drehbuch", "film/filme", "theater/theater"];
 
 
 
