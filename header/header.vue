@@ -24,7 +24,7 @@
             <dropdown title="David Gräber" to="/team/david"/>
             <dropdown title="Andreas Neu" to="/team/andreas"/>
             <dropdown title="Hannah Müller" to="/team/hannah" />
-            <dropdown title="Ehemalige" />
+            
           </dropdown>
 
           <dropdown title="Filme" >

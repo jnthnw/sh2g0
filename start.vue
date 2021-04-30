@@ -2,7 +2,10 @@
   <div class="main-content text-center">
     <div class="container-fluid page-content-full black">
       <img class="logo-big" src="img/logo19.jpg" alt="" />
-      <h1 class="title">Plattform für Film und Theater</h1>
+      <h1 class="title">
+      Shakespeare2go <br>
+      Plattform für Film und Theater
+      </h1>
 
       <span class="material-icons downbutton text-center" @click="scrollDown()">
         arrow_circle_down
