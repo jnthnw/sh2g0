@@ -1,12 +1,14 @@
 <template>
   <div class="main-content text-center">
     <div class="container">
-      <h1>Drehbuch</h1>
+      <h1>Drehbuchseminar</h1>
       
       <div class="text text-left">
       
         <div class="infotext">
-          
+          Ab Herbst (September) 2021 veranstaltet Shakespeare2go ein sechsmonatiges Seminar für Drehbuchschreiben.
+Anmeldung und Anfragen zu den speziellen Konditionen und organisatorischen Fragen bitte an Andreas Neu +491772604195.
+Das Angebot ist besonders für Quereinsteiger geeignet.
         </div>
       </div>
     </div>

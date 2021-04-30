@@ -6,7 +6,8 @@
       <div class="text text-left">
       
         <div class="infotext">
-          
+          Sakespeare2go bietet ein umfassendes professionelles Schauspielcoaching an - von den Grundlagen über genrespezifische Spielweisen bis zum Camera Acting. Dabei richtet sich das Training nach den individuellen Bedürfnissen und den bereits erworbenen Fähigkeiten und Erfahrungen der SchauspielerInnen. Termine können unter +491772604195 vereinbart werden.
+
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@
 */
 
 
-let files = ["aktuelles", "kontakt", "service/showreel", "service/drehbuch", "film/filme", "theater/theater", "service/coaching"];
+let files = ["aktuelles", "kontakt", "service/showreel", "service/drehbuch", "film/filme", "theater/theater", "service/coaching", "impressum"];
 
 
 let team = ["hannah", "sonja", "david", "andreas"];
