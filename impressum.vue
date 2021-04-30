@@ -5,17 +5,17 @@
       <div class="text">
         <h2>Legal disclosure</h2>
         <div>
-                    Shakespeare2go<br>
-          Brunnenstraße 144<br>
-          10115 Berlin<br>
-          <br>
-          Sonja Holzinger, David Gräber, Hannah Müller, Andreas Neu<br>
-          mail: sh2go.online@gmail.com<br>
-          www.shakespeare2go.com<br>
-          <br>
-          grafics and image sources by Shakespeare2go<br>
-          design by Jonathan Wendler ( jnthnw.de ) <br>
-          
+          Shakespeare2go<br />
+          Brunnenstraße 144<br />
+          10115 Berlin<br />
+          <br />
+          Sonja Holzinger, David Gräber, Hannah Müller, Andreas Neu<br />
+          mail: sh2go.online@gmail.com<br />
+          www.shakespeare2go.com<br />
+          <br />
+          grafics and image sources by Shakespeare2go<br />
+          wenbsite design by Hannah Müller & Jonathan Wendler (
+          https://jnthnw.de ) <br />
         </div>
         <h2>Disclaimer</h2>
         <p>
@@ -114,7 +114,7 @@
 </template>
 
 <style scoped>
-div{
+div {
   color: white;
   text-align: left;
 }

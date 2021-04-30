@@ -1,7 +1,8 @@
 <template>
   <div class="main-content">
-    <div class="container ">
+    <div class="container">
       <h1 class="black">KONTAKT</h1>
+
       <div class="row justify-content-md-center">
         <div class="col-12 col-lg-6 contact-box">
           <a
@@ -24,6 +25,12 @@
           </div>
         </div>
       </div>
+      <div id="gruppenbild" class="container">
+        <img class="img-fluid" src="img/gruppe.jpg" alt="" />
+      </div>
+      <p class="m-2">
+        <a class="link" href="#/impressum"> > Impressum</a>
+      </p>
     </div>
   </div>
 </template>
@@ -36,6 +43,16 @@ div {
 
 h2 {
   margin-top: 40px;
+}
+
+#gruppenbild {
+  _height: 60%;
+  padding: 10px;
+}
+
+#gruppenbild img {
+  width: 40%;
+  object-fit: scale-down;
 }
 
 .contact-box {

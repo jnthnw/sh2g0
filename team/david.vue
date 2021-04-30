@@ -11,8 +11,8 @@
       <p>
         Im Zeitraum von fünf Jahren fertigte David Gräber über fünfzig Kurzfilme
         dokumentarischer und fiktiver Art. Er arbeitete als Regie- und
-        Schnittassistent bei der Berliner Produktionsfirma solo:film Gmbh uns
-        ist momentan als Autor bei der Filmhaus GmbH beschäftigt.
+        Schnittassistent bei der Berliner Produktionsfirma solo:film Gmbh und
+        als Autor für die Filmhaus GmbH.
       </p>
     </template>
   </teambase>

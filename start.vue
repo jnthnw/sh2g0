@@ -11,23 +11,23 @@
     <div class="container-fluid team-images page-content-full black" ref="team">
       <a class="anchor"><h1 class="">Team</h1></a>
       <div class="row justify-content-around">
-        <div class="col-sm-6 col-12">
+        <div class="_col-sm-6 col-6">
           <img src="img/david.jpg" alt="" />
         </div>
-        <div class="col-sm-6 col-12">
+        <div class="_col-sm-6 col-6">
           <img src="img/sonja.jpg" alt="" />
         </div>
 
-        <div class="col-sm-6 col-12">
+        <div class="_col-sm-6 col-6">
           <img src="img/andreas.jpg" alt="" />
         </div>
-        <div class="col-sm-6 col-12">
+        <div class="_col-sm-6 col-6">
           <img src="img/hannah.jpg" alt="" />
         </div>
       </div>
     </div>
 
-    <div class="container-fluid page-content-full black">
+    <div class="container-fluid page-content black">
       <div class="container _d-flex _flex-column">
         <div class="lead _flex-fill">
           <p>
@@ -47,8 +47,15 @@
             AKTUELLES veröffentlicht.
           </p>
         </div>
-        <div id="gruppenbild" class="_flex-fill">
-          <img class="img-fluid" src="img/gruppe.jpg" alt="" />
+
+        <div class="video">
+          <iframe
+            src="https://player.vimeo.com/video/538262469"
+            _width="100"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </div>
@@ -158,16 +165,39 @@ export default {
 }
 
 .page-content {
-  _height: calc(100vh - 100px);
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+
+@media screen and (max-width: 770px) {
+  .page-content-full {
+    height: fit-content;
+    min-height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .links div {
   margin-top: 10px;
 }
 </style>
+
 <style scoped>
+.video {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.video iframe {
+  top: 0px;
+  width: 100%;
+  height: 550px;
+}
+
+
+
 .logo-big {
   max-height: 40%;
   max-width: 100%;
@@ -193,12 +223,6 @@ export default {
 }
 
 @media screen and (max-width: 770px) {
-  .page-content-full {
-    height: fit-content;
-    min-height: calc(100vh - 100px);
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
   .team-images img {
     width: 100%;
     _height: 100%;
@@ -234,15 +258,6 @@ export default {
   height: 100%;
 }
 
-#gruppenbild {
-  height: 40%;
-}
-
-#gruppenbild img {
-  max-height: 100%;
-  _object-fit: scale-down;
-}
-
 .container {
   height: 100%;
 }
@@ -256,6 +271,9 @@ export default {
   color: black;
 }
 
+h1 {
+  padding: 2px 5px;
+}
 .white.link {
   color: white;
   background-color: black;
