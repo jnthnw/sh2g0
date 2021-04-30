@@ -84,13 +84,13 @@
 
         <div class="row justify-content-around m-3">
           <div class="col-sm-4 col-12">
-            <img src="img/filme/morgen.png" alt="" />
+            <img src="img/filme/morgen.jpg" alt="" />
           </div>
           <div class="col-sm-4 col-12">
-            <img src="img/filme/cattleya.png" alt="" />
+            <img src="img/filme/cattleya.jpg" alt="" />
           </div>
           <div class="col-sm-4 col-12">
-            <img src="img/filme/experimente.png" alt="" />
+            <img src="img/filme/experimente.jpg" alt="" />
           </div>
         </div>
         <router-link class="link white" to="/film/filme"> > mehr</router-link>
@@ -105,10 +105,10 @@
 
         <div class="row justify-content-around m-3">
           <div class="col-sm-4 col-12">
-            <img src="img/theater/miranda.png" alt="" />
+            <img src="img/theater/miranda.jpg" alt="" />
           </div>
           <div class="col-sm-4 col-12">
-            <img src="img/theater/schwestern.png" alt="" />
+            <img src="img/theater/schwestern.jpg" alt="" />
           </div>
         </div>
         <router-link class="link white" to="/theater/theater">
