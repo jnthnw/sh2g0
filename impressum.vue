@@ -83,7 +83,6 @@
           Facebook- Nutzerkonto zuordnen kann, loggen Sie sich bitte aus Ihrem
           Facebook-Benutzerkonto aus.
         </p>
-        <p>1</p>
         <p></p>
         <h2>Auskunft, Löschung, Sperrung</h2>
         <p>
@@ -109,7 +108,6 @@
           E-Mail-Adresse sowie deren Nutzung zum Versand des Newsletters können
           Sie jederzeit widerrufen.
         </p>
-        <p>2</p>
       </div>
     </div>
   </div>
@@ -118,7 +116,7 @@
 <style scoped>
 div{
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 h2 {

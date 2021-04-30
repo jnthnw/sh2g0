@@ -147,6 +147,27 @@ export default {
 };
 </script>
 <style>
+.main-content {
+  height: calc(100%-100px);
+  width: 100%;
+}
+
+.page-content-full {
+  height: calc(100vh - 100px);
+  padding-top: 20px;
+}
+
+.page-content {
+  _height: calc(100vh - 100px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.links div {
+  margin-top: 10px;
+}
+</style>
+<style scoped>
 .logo-big {
   max-height: 40%;
   max-width: 100%;
@@ -171,22 +192,6 @@ export default {
   margin-right: auto;
 }
 
-.main-content {
-  height: calc(100%-100px);
-  width: 100%;
-}
-
-.page-content-full {
-  height: calc(100vh - 100px);
-  padding-top: 20px;
-}
-
-.page-content {
-  _height: calc(100vh - 100px);
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 @media screen and (max-width: 770px) {
   .page-content-full {
     height: fit-content;
@@ -200,12 +205,10 @@ export default {
     padding-left: 20px;
     padding-right: 20px;
   }
-
- 
 }
 
 @media screen and (max-width: 300px) {
- .container,
+  .container,
   .container-fluid {
     padding-left: 1px;
     padding-right: 1px;
@@ -262,9 +265,5 @@ export default {
 
 #filme img {
   max-width: 100%;
-}
-
-.links div {
-  margin-top: 10px;
 }
 </style>

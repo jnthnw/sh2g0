@@ -1,12 +1,12 @@
 <template>
   <div class="main-content">
-    <div class="container">
-      <h1>{{full_name}}</h1>
-      <div class="row pictext">
+    <div class="container team_container">
+      <h1 class="full_name">{{full_name}}</h1>
+      <div class="row teampictext">
         <div class="col-12 col-md-6">
-          <img :src="'img/'+image" class="pic" alt="" />
+          <img :src="'img/'+image" class="teampic" alt="" />
         </div>
-        <div class="col-12 col-md-6 text">
+        <div class="col-12 col-md-6 teamtext">
           <span class="">
               <slot name="content"/>
               
@@ -25,29 +25,29 @@ export default {
 }
 </script>
 <style>
-h1 {
+.full_name {
   color: white;
   position: relative;
   font-size: 80px;
-  text-shadow: 0x 3px 10px gray;
+  text-shadow: 0x 3px 5px gray;
 }
 
-.pic {
+.teampic {
   filter: grayscale();
   width: 100%;
 }
-.pictext {
+.teampictext {
   z-index: -1;
   position: relative;
   margin-top: -60px;
 }
 
-.text {
+.teamtext {
   margin-top: 50px;
   font-size: 20px;
 }
 
-.container {
+.team_container {
   color: white;
 }
 </style>

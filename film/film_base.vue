@@ -1,7 +1,7 @@
 <template>
   <div class="main-content text-center">
-    <div class="container">
-      <h1>{{ name }}</h1>
+    <div class="container film_container">
+      <h1 class="film_name">{{ name }}</h1>
       <h2 class="text-uppercase">{{ subtitle }}</h2>
       <div class="text">
         <slot name="description" />
@@ -54,29 +54,23 @@ export default {
 };
 </script>
 <style>
-h1 {
+.film_name {
   color: #ffa500;
   font-size: 60px;
 }
 
-.pic {
-  filter: grayscale();
-  width: 100%;
-}
-.pictext {
-}
 
-h2 {
+.film_container h2 {
   text-align: left;
 }
 
-.text {
+.film_container .text {
   margin-top: 50px;
   font-size: 20px;
   text-align: center;
 }
 
-.container {
+.film_container {
   color: white;
   max-width: 800px;
 }
@@ -127,7 +121,7 @@ h2 {
   font-size: 40px;
 }
 
-.info {
+.film_container .info {
   color: gray;
 }
 </style>

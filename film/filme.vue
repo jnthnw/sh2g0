@@ -1,5 +1,5 @@
 <template>
-  <div class="main-content text-center">
+  <div class="main-content text-center filme">
     <div class="container">
       <div class="examples">
         <h1>
@@ -34,51 +34,18 @@
   </div>
 </template>
 <style>
-h1 {
+
+.filme h1 {
   color: #ffa500;
   font-size: 80px;
 }
 
-.pic {
-  filter: grayscale();
-  width: 100%;
-}
-.pictext {
-}
-
-.infotext {
-  hyphens: auto;
-  text-align: justify;
-}
-
-h2 {
-  text-align: left;
-}
-
-.text {
-  margin-top: 50px;
-  font-size: 20px;
-  text-align: center;
-  color: white;
-}
-
-.container {
+.filme .container {
   color: white;
   max-width: 800px;
 }
 
-.video {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.video iframe {
-  top: 0px;
-  width: 100%;
-  height: 550px;
-}
-
-.examples div {
+.filme .examples div {
   margin-top: 10px !important;
   display: block !important;
 }

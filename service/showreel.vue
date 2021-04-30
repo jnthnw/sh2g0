@@ -1,5 +1,5 @@
 <template>
-  <div class="main-content text-center">
+  <div class="main-content text-center showreel">
     <div class="container">
       <h1>Showreel</h1>
       <div class="examples">
@@ -50,52 +50,29 @@
   </div>
 </template>
 <style>
-h1 {
+.showreel h1 {
   color: #ffa500;
   font-size: 80px;
 }
 
-.pic {
-  filter: grayscale();
-  width: 100%;
-}
-.pictext {
-}
-
-.infotext {
+.showreel .infotext {
   hyphens: auto;
   text-align: justify;
 }
 
-h2 {
+.showreel h2 {
   text-align: left;
+  color: white
 }
 
-.text {
+.showreel .text {
   margin-top: 50px;
   font-size: 20px;
   text-align: center;
   color: white;
 }
 
-.container {
-  color: white;
-  max-width: 800px;
-}
-
-.video {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.video iframe {
-  top: 0px;
-  width: 100%;
-  height: 550px;
-}
-
-
-.examples div {
+.showreel .examples div {
   margin-top: 10px !important;
   display: block !important;
 }

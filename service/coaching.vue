@@ -13,7 +13,7 @@
     </div>
   </div>
 </template>
-<style>
+<style scoped>
 h1 {
   color: #ffa500;
   font-size: 80px;
