@@ -79,7 +79,7 @@ footer div a {
 }
 
 * {
-    outline: rgba(255, 0, 0, 0.3) solid 0.5px !important;
+    _outline: rgba(255, 0, 0, 0.3) solid 0.5px !important;
 }
 
 .link {
@@ -88,6 +88,12 @@ footer div a {
     background-color: white;
     padding: 5px;
     font-size: 30px;
+}
+
+.link:hover {
+    color: orange;
+    text-decoration: none;
+    border: orange solid 1px;
 }
 
 @media screen and (max-width: 350px) {

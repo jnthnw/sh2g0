@@ -50,9 +50,9 @@
 
 
           <dropdown title="Service">
-            <dropdown title="Allgemein" />
-            <dropdown title="Drehbuch"  to="/service/drehbuch"/>
               <dropdown title="Showreel" to="/service/showreel" />
+            <dropdown title="Drehbuchklasse"  to="/service/drehbuch"/>
+            <dropdown title="Coaching für Schauspieler" />
           </dropdown>
 
           <dropdown title="Aktuelles" />

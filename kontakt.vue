@@ -1,13 +1,13 @@
 <template>
   <div class="main-content">
-    <div class="container">
-      <h1>KONTAKT</h1>
+    <div class="container ">
+      <h1 class="black">KONTAKT</h1>
       <div class="row justify-content-md-center">
         <div class="col-12 col-lg-6 contact-box">
           <a
             href="https://www.facebook.com/Shakespeare-to-go-1812940565700467/"
           >
-            <span class="material-icons"> facebook </span></a
+            <span class="material-icons white"> facebook </span></a
           >
 
           <div class="row">
@@ -30,7 +30,7 @@
 
 <style scoped>
 div {
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -40,7 +40,8 @@ h2 {
 
 .contact-box {
   width: 500px;
-  background-color: rgb(57, 174, 162);
+  background-color: white;
+  color: black;
   padding: 40px 40px;
 }
 

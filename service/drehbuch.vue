@@ -6,7 +6,7 @@
       <div class="text text-left">
       
         <div class="infotext">
-          1 toller text vong inhalt her
+          
         </div>
       </div>
     </div>

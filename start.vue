@@ -91,7 +91,7 @@
     </div>
 
     <div class="container-fluid page-content black" id="filme">
-      <div class="container m-2">
+      <div class="container">
         <div class="text-left">
           <h1 class="white d-inline">THEATER</h1>
         </div>
@@ -111,23 +111,23 @@
     </div>
 
     <div class="container-fluid page-content white" id="filme">
-      <div class="container mx-sm-2">
+      <div class="container">
         <div class="text-left">
           <h1 class="black d-inline">SERVICE</h1>
         </div>
         <div class="text-left mx-sm-2 links">
           <div class="mx-sm-4">
-            <router-link class="link black" to="/theater">
+            <router-link class="link black" to="/service/showreel">
               > Showreel</router-link
             >
           </div>
           <div class="mx-sm-4">
-            <router-link class="link black" to="/theater">
+            <router-link class="link black" to="/service/drehbuch">
               > Drehbuchklasse</router-link
             >
           </div>
           <div class="mx-sm-4">
-            <router-link class="link black" to="/theater">
+            <router-link class="link black" to="/service/coaching">
               > Coaching für Schauspieler</router-link
             >
           </div>
