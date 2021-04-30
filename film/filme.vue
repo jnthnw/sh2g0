@@ -6,27 +6,27 @@
           FILME
         </h1>
         <div>
-          <router-link class="link" to="/aktuelles"> > CATTLEYA </router-link>
+          <router-link class="link" to="/film/cattleya"> > CATTLEYA </router-link>
         </div>
         <div>
-          <router-link class="link" to="/aktuelles">
+          <router-link class="link" to="/film/morgen">
             > MORGEN IST AUCH NOCH EIN TAG
           </router-link>
         </div>
         <div>
-          <router-link class="link" to="/aktuelles"> > KEINE EXPERIMENTE</router-link>
+          <router-link class="link" to="/film/experimente"> > KEINE EXPERIMENTE</router-link>
         </div>
         <div>
-          <router-link class="link" to="/aktuelles"> > ALLES WIRD GUT</router-link>
+          <router-link class="link" to="/film/alleswirdgut"> > ALLES WIRD GUT</router-link>
         </div>
         <div>
-          <router-link class="link" to="/aktuelles"> > SUMMERNIGHT TALENTS</router-link>
+          <router-link class="link" to="/film/summernight"> > SUMMERNIGHT TALENTS</router-link>
         </div>
         <div>
-          <router-link class="link" to="/aktuelles"> > GESTERN. HEUTE. MORGEN</router-link>
+          <router-link class="link" to="/film/gestern"> > GESTERN. HEUTE. MORGEN</router-link>
         </div>
         <div>
-          <router-link class="link" to="/aktuelles"> > ENGEL</router-link>
+          <router-link class="link" to="/film/engel"> > ENGEL</router-link>
         </div>
 
       </div>

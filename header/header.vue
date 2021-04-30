@@ -29,22 +29,22 @@
 
           <dropdown title="Filme" >
             <dropdown title="MORGEN IST AUCH NOCH EIN TAG" to="/film/morgen"/>
-            <dropdown title="CATTLEYA" />
-            <dropdown title="KEINE EXPERIMENTE" />
-            <dropdown title="ALLES WIRD GUT" />
-            <dropdown title="SUMMERNIGHT TALENTS" />
-            <dropdown title="GESTERN. HEUTE. MORGEN" />
-            <dropdown title="ENGEL" />
+            <dropdown title="CATTLEYA" to="/film/cattleya"/>
+            <dropdown title="KEINE EXPERIMENTE" to="/film/experimente"/>
+            <dropdown title="ALLES WIRD GUT" to="/film/alleswirdgut"/>
+            <dropdown title="SUMMERNIGHT TALENTS" to="/film/summernight"/>
+            <dropdown title="GESTERN. HEUTE. MORGEN" to="/film/gestern"/>
+            <dropdown title="ENGEL" to="/film/engel" />
           </dropdown>
 
           <dropdown title="Theater">
-            <dropdown title="Schwestern" />
-            <dropdown title="Preparadise" />
-            <dropdown title="Wendezeit Zeitwende" />
-            <dropdown title="Miranda" />
-            <dropdown title="Macbeth" />
-            <dropdown title="Insomnia" />
-            <dropdown title="Mistrauen" />
+            <dropdown title="Schwestern" to="/theater/schwestern"/>
+            <dropdown title="Preparadise"  to="/theater/preparadise"/>
+            <dropdown title="Wendezeit Zeitwende" to="/theater/wendezeit"/>
+            <dropdown title="Miranda" to="/theater/miranda"/>
+            <dropdown title="Macbeth" to="/theater/macbeth"/>
+            <dropdown title="Insomnia" to="/theater/insomnia"/>
+            <dropdown title="Misstrauen" to="/theater/misstrauen"/>
           </dropdown>
 
 
@@ -52,7 +52,7 @@
           <dropdown title="Service">
               <dropdown title="Showreel" to="/service/showreel" />
             <dropdown title="Drehbuchklasse"  to="/service/drehbuch"/>
-            <dropdown title="Coaching für Schauspieler" />
+            <dropdown title="Coaching für Schauspieler" to="/service/coaching" />
           </dropdown>
 
           <dropdown title="Aktuelles" />

@@ -5,15 +5,15 @@
       <div class="examples">
           <h2>Beispiele</h2>
         <div>
-          <router-link class="link" to="/aktuelles"> > ERIC LUST</router-link>
+          <router-link class="link" to="/showreel/ericlust"> > ERIC LUST</router-link>
         </div>
         <div>
-          <router-link class="link" to="/aktuelles">
+          <router-link class="link" to="/showreel/missunderstanding">
             > THE MISSUNDERSTANDING
           </router-link>
         </div>
         <div>
-          <router-link class="link" to="/aktuelles"> > POPO MARTIN</router-link>
+          <router-link class="link" to="/showreel/popomartin"> > POPO MARTIN</router-link>
         </div>
       </div>
       <div class="text text-left">

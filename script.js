@@ -2,10 +2,30 @@
     Alle Seiten
 */
 
-const files = ["aktuelles", "kontakt", "team/hannah", "team/andreas", "team/david", "team/sonja", "/film/morgen", "service/showreel", "service/drehbuch", "film/filme", "theater/theater"];
+
+let files = ["aktuelles", "kontakt", "service/showreel", "service/drehbuch", "film/filme", "theater/theater", "service/coaching"];
 
 
+let team = ["hannah", "sonja", "david", "andreas"];
+for (const t of team) {
+    files.push("team/" + t);
+}
 
+let filme = ["morgen", "cattleya", "experimente", "alleswirdgut", "summernight", "engel", "gestern"];
+for (const t of filme) {
+    files.push("film/" + t);
+}
+
+let theater = ["schwestern", "preparadise", "wendezeit", "miranda", "macbeth", "insomnia", "misstrauen"];
+for (const t of theater) {
+    files.push("theater/" + t);
+}
+
+
+let showreel = ["ericlust", "missunderstanding", "popomartin"];
+for (const t of showreel) {
+    files.push("showreel/" + t);
+}
 
 
 
