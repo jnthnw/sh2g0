@@ -20,9 +20,9 @@
       >
         <ul class="nav navbar-nav justify-content-center text-uppercase">
           <dropdown title="Team">
-            <dropdown title="Sonja Holzinger" />
-            <dropdown title="David Gräber" />
-            <dropdown title="Andreas Neu" />
+            <dropdown title="Sonja Holzinger" to="/team/sonja"/>
+            <dropdown title="David Gräber" to="/team/david"/>
+            <dropdown title="Andreas Neu" to="/team/andreas"/>
             <dropdown title="Hannah Müller" to="/team/hannah" />
             <dropdown title="Ehemalige" />
           </dropdown>
