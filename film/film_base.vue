@@ -9,8 +9,8 @@
       <div class="teambox">
         <slot name="team" />
       </div>
+      <h2 class="text-uppercase"  v-if="trailer">Trailer</h2>
       <div class="video" v-if="trailer">
-        <h2 class="text-uppercase">Trailer</h2>
         <iframe
           :src="trailer"
           _width="100"
@@ -19,8 +19,8 @@
           allowfullscreen
         ></iframe>
       </div>
+      <h2 class="text-uppercase ">Film</h2>
       <div class="video" v-if="film">
-        <h2 class="text-uppercase">Video</h2>
         <iframe
           :src="film"
           _width="100"
@@ -33,24 +33,23 @@
       <div class="teambox info">
         <div class="row" v-if="dauer">
           <div class="col-12 col-sm-6">Dauer</div>
-          <div class="col-12 col-sm-6">{{dauer}}</div>
+          <div class="col-12 col-sm-6">{{ dauer }}</div>
         </div>
         <div class="row" v-if="year">
           <div class="col-12 col-sm-6">Jahr</div>
-          <div class="col-12 col-sm-6">{{year}}</div>
+          <div class="col-12 col-sm-6">{{ year }}</div>
         </div>
         <div class="row" v-if="esSpielen">
           <div class="col-12 col-sm-6">Es Spielen</div>
-          <div class="col-12 col-sm-6">{{esSpielen}}</div>
+          <div class="col-12 col-sm-6">{{ esSpielen }}</div>
         </div>
-
       </div>
     </div>
   </div>
 </template>
 <script>
 export default {
-  props: ["name", "film", "trailer", "subtitle","esSpielen","dauer","year"],
+  props: ["name", "film", "trailer", "subtitle", "esSpielen", "dauer", "year"],
 };
 </script>
 <style>
@@ -58,7 +57,6 @@ export default {
   color: #ffa500;
   font-size: 60px;
 }
-
 
 .film_container h2 {
   text-align: left;
@@ -75,18 +73,20 @@ export default {
   max-width: 800px;
 }
 
-.video {
-  margin-top: 40px;
-  margin-bottom: 40px;
+.film_container .video {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 */
+  margin-bottom: 20px;
 }
 
-.video iframe {
+.film_container .video iframe {
+  position: absolute;
   top: 0px;
+  left: 0;
   width: 100%;
-  height: 550px;
+  height: 100%;
 }
-
-
 
 .teambox {
   background-color: black;
