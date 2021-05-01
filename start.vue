@@ -1,10 +1,10 @@
 <template>
-  <div class="main-content text-center">
+  <div class="main-content text-center startpage">
     <div class="container-fluid page-content-full black">
       <img class="logo-big" src="img/logo19.jpg" alt="" />
       <h1 class="title">
-      Shakespeare2go <br>
-      Plattform für Film und Theater
+        Shakespeare2go <br />
+        Plattform für Film und Theater
       </h1>
 
       <span class="material-icons downbutton text-center" @click="scrollDown()">
@@ -15,17 +15,25 @@
       <a class="anchor"><h1 class="">Team</h1></a>
       <div class="row justify-content-around">
         <div class="_col-sm-6 col-6">
-          <img src="img/david.jpg" alt="" />
+          <router-link to="/team/david">
+            <img src="img/david.jpg" alt="" />
+          </router-link>
         </div>
         <div class="_col-sm-6 col-6">
-          <img src="img/sonja.jpg" alt="" />
+          <router-link to="/team/sonja">
+            <img src="img/sonja.jpg" alt="" />
+          </router-link>
         </div>
 
         <div class="_col-sm-6 col-6">
-          <img src="img/andreas.jpg" alt="" />
+          <router-link to="/team/andreas">
+            <img src="img/andreas.jpg" alt="" />
+          </router-link>
         </div>
         <div class="_col-sm-6 col-6">
-          <img src="img/hannah.jpg" alt="" />
+          <router-link to="/team/hannah">
+            <img src="img/hannah.jpg" alt="" />
+          </router-link>
         </div>
       </div>
     </div>
@@ -79,7 +87,7 @@
       </div>
     </div>
 
-    <div class="container-fluid page-content black" id="filme">
+    <div class="container-fluid page-content black filme" id="">
       <div class="container">
         <div class="text-left">
           <h1 class="white d-inline">FILME</h1>
@@ -87,20 +95,26 @@
 
         <div class="row justify-content-around m-3">
           <div class="col-sm-4 col-12">
-            <img src="img/filme/morgen.jpg" alt="" />
+            <router-link to="/film/morgen">
+              <img src="img/filme/morgen.jpg" alt="" />
+            </router-link>
           </div>
           <div class="col-sm-4 col-12">
-            <img src="img/filme/cattleya.jpg" alt="" />
+            <router-link to="/film/cattleya">
+              <img src="img/filme/cattleya.jpg" alt="" />
+            </router-link>
           </div>
           <div class="col-sm-4 col-12">
-            <img src="img/filme/experimente.jpg" alt="" />
+            <router-link to="/film/experimente">
+              <img src="img/filme/experimente.jpg" alt="" />
+            </router-link>
           </div>
         </div>
         <router-link class="link white" to="/film/filme"> > mehr</router-link>
       </div>
     </div>
 
-    <div class="container-fluid page-content black" id="filme">
+    <div class="container-fluid page-content black filme" id="">
       <div class="container">
         <div class="text-left">
           <h1 class="white d-inline">THEATER</h1>
@@ -108,12 +122,22 @@
 
         <div class="row justify-content-around m-3">
           <div class="col-sm-4 col-12">
-            <img src="img/theater/miranda.jpg" alt="" />
+            <router-link to="/theater/julie">
+              <img src="img/theater/julie.jpg" alt="" />
+            </router-link>
           </div>
           <div class="col-sm-4 col-12">
-            <img src="img/theater/schwestern.jpg" alt="" />
+            <router-link to="/theater/miranda">
+              <img src="img/theater/miranda.jpg" alt="" />
+            </router-link>
+          </div>
+          <div class="col-sm-4 col-12">
+            <router-link to="/theater/schwestern">
+              <img src="img/theater/schwestern.jpg" alt="" />
+            </router-link>
           </div>
         </div>
+
         <router-link class="link white" to="/theater/theater">
           > mehr</router-link
         >
@@ -172,7 +196,6 @@ export default {
   padding-bottom: 20px;
 }
 
-
 @media screen and (max-width: 770px) {
   .page-content-full {
     height: fit-content;
@@ -184,6 +207,50 @@ export default {
 
 .links div {
   margin-top: 10px;
+}
+
+@media screen and (max-width: 770px) {
+  .team-images img {
+    width: 100%;
+    _height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.team-images > div > div {
+  height: 100%;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.team-images > div > div:nth-child(2n) {
+  text-align: left;
+}
+
+.team-images .row {
+  height: 40% !important;
+}
+
+.team-images img {
+  _width: 100%;
+  height: 100%;
+}
+
+.startpage .filme img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 300px) {
+  .startpage .container,
+  .startpage .container-fluid {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+}
+
+.startpage .container {
+  height: 100%;
 }
 </style>
 
@@ -198,8 +265,6 @@ export default {
   width: 100%;
   height: 550px;
 }
-
-
 
 .logo-big {
   max-height: 40%;
@@ -225,46 +290,6 @@ export default {
   margin-right: auto;
 }
 
-@media screen and (max-width: 770px) {
-  .team-images img {
-    width: 100%;
-    _height: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .container,
-  .container-fluid {
-    padding-left: 1px;
-    padding-right: 1px;
-  }
-}
-
-.team-images > div > div {
-  height: 100%;
-  margin-top: 10px;
-  text-align: right;
-}
-
-.team-images > div > div:nth-child(2n) {
-  text-align: left;
-}
-
-.team-images .row {
-  height: 40% !important;
-}
-
-.team-images img {
-  _width: 100%;
-  height: 100%;
-}
-
-.container {
-  height: 100%;
-}
-
 #aktuelles .container {
   text-align: left;
   color: black;
@@ -282,9 +307,5 @@ h1 {
   background-color: black;
   border: white solid 1px;
   padding: 5px;
-}
-
-#filme img {
-  max-width: 100%;
 }
 </style>

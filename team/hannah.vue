@@ -1,5 +1,5 @@
 <template>
-  <teambase full_name="Hanna Müller" image="hannah.jpg">
+  <teambase full_name="Hannah Müller" image="hannah.jpg">
     <template v-slot:content>
       Hannah Müller ist in Stuttgart aufgewachsen und studiert Theater- und
       Veranstaltungstechnik an der Beuth Hochschule für Technik Berlin. Sie hat

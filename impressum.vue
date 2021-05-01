@@ -13,8 +13,8 @@
           mail: sh2go.online@gmail.com<br />
           www.shakespeare2go.com<br />
           <br />
-          grafics and image sources by Shakespeare2go<br />
-          wenbsite design by Hannah Müller & Jonathan Wendler (
+          graphics and image sources by Shakespeare2go<br />
+          website design by Hannah Müller & Jonathan Wendler (
           https://jnthnw.de ) <br />
         </div>
         <h2>Disclaimer</h2>
