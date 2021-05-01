@@ -45,6 +45,7 @@
             <dropdown title="Macbeth" to="/theater/macbeth"/>
             <dropdown title="Insomnia" to="/theater/insomnia"/>
             <dropdown title="Misstrauen" to="/theater/misstrauen"/>
+            <dropdown title="Julie" to="/theater/julie"/>
           </dropdown>
 
 

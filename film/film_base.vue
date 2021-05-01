@@ -19,7 +19,7 @@
           allowfullscreen
         ></iframe>
       </div>
-      <h2 class="text-uppercase ">Film</h2>
+      <h2 class="text-uppercase " v-if="film">Film</h2>
       <div class="video" v-if="film">
         <iframe
           :src="film"

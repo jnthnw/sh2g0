@@ -16,7 +16,7 @@ for (const t of filme) {
     files.push("film/" + t);
 }
 
-let theater = ["schwestern", "preparadise", "wendezeit", "miranda", "macbeth", "insomnia", "misstrauen"];
+let theater = ["schwestern", "preparadise", "wendezeit", "miranda", "macbeth", "insomnia", "misstrauen", "julie"];
 for (const t of theater) {
     files.push("theater/" + t);
 }

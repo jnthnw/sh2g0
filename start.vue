@@ -75,16 +75,24 @@
       <h1>AKTUELLES</h1>
 
       <div class="container">
-        <h2>Neues</h2>
-        <p>POSTPRODUKTION</p>
+        <div class="row">
+          <div class="col-12 col-sm-3">Mai 2021</div>
+          <div class="col-12 col-sm-9">
+            aktuell erarbeiten wir die beiden Stücke MADAME JULIE und BLICK
+            ZURÜCK IM ZORN. POSTCARDS FROM SICILY läuft auf dem TMF Film
+            Festival in Indien.
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-12 col-sm-3">16.+17. Juli</div>
+          <div class="col-12 col-sm-9">
+            Aufführung MADAME JULIE im Zeller Kultur Theater in Radolfzell
+          </div>
+        </div>
 
-        <p>
-          MORGEN IST AUCH NOCH EIN TAG, WENN DU WILLST (AT) Mittellanger
-          Spielfilm, Dreh Juni 2020
-        </p>
-
-        <router-link class="link" to="/aktuelles"> > mehr</router-link>
       </div>
+        <router-link class="link" to="/aktuelles"> > mehr</router-link>
     </div>
 
     <div class="container-fluid page-content black filme" id="">
@@ -252,6 +260,32 @@ export default {
 .startpage .container {
   height: 100%;
 }
+
+#aktuelles .container {
+  _text-align: left;
+  color: black;
+  margin-bottom: 20px;
+}
+
+#aktuelles h1 {
+  color: black;
+}
+
+
+@media (min-width: 575px) {
+  #aktuelles .row div {
+    text-align: right;
+  }
+
+  #aktuelles .row div:last-child {
+    text-align: left;
+  }
+}
+
+
+#aktuelles .row {
+  text-align: center !important;
+}
 </style>
 
 <style scoped>
@@ -290,14 +324,8 @@ export default {
   margin-right: auto;
 }
 
-#aktuelles .container {
-  text-align: left;
-  color: black;
-}
 
-#aktuelles h1 {
-  color: black;
-}
+
 
 h1 {
   padding: 2px 5px;
